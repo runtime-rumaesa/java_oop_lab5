@@ -1,0 +1,31 @@
+package lab5;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+public class cw1 {
+    public static void main(String[] args) {
+        ArrayList <String> Names = new ArrayList<>();
+        ArrayList <Integer> roll = new ArrayList<>();
+        Names.add("Zara");
+        Names.add("Ahmad");
+        Names.add("Ammara");
+        Names.add("Eshal");
+        Collections.sort(Names);
+        roll.add(231);
+        roll.add(412);
+        roll.add(741);
+        roll.add(214);
+        Collections.sort(roll);
+        System.out.println("Sorted Names");
+        for (String name : Names){
+            System.out.println(name);
+        }
+        System.out.println("Sorted Roll numbers: ");
+        for (int i = 0; i < 4; i++){
+            System.out.println(roll.get(i) + "");
+        }
+
+    }
+}
